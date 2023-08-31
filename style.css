@@ -243,9 +243,14 @@ main {
 }
 
 .botao-fixo img {
+    opacity: 0.4;
     position: absolute;
     bottom: -40px;
     right: 30px;
+}
+
+.botao-fixo img:hover {
+    opacity: 1;
 }
 
 footer {
