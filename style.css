@@ -239,9 +239,12 @@ main {
 }
 
 .botao-fixo {
-    margin: 0;
-    position: fixed;
-    bottom: 30px;
+    position: relative;
+}
+
+.botao-fixo img {
+    position: absolute;
+    bottom: -40px;
     right: 30px;
 }
 
