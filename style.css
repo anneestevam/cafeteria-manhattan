@@ -18,9 +18,11 @@
     margin: 0;
 }
 
+body { overflow-x: hidden; }
+
 header {
     width: 100%;
-    padding: 10px 15px;
+    padding: 0px 15px;
     background-color: var(--cor3);
     position: fixed;
 }
@@ -47,8 +49,8 @@ header a {
     text-decoration: none;
     text-transform: uppercase;
     text-shadow: 4px 4px 2px #000;
-    padding: 5px;
-    margin: 0 5px;
+    padding: 0px 10px;
+
 }
 
 main {
@@ -58,7 +60,7 @@ main {
 
 .container-imagem {
     width: 100%;
-    height: 950px;
+    height: 800px;
     padding: 40px 0px;
     background-size: cover;
     background-attachment: fixed;
@@ -77,6 +79,8 @@ main {
 
 .secao-banner {
     background-image: url(./assets/parallax-imagem1.png);
+    background-position: center;
+    padding: 100px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,8 +96,8 @@ main {
     width: 900px;
     height: 300px;
     margin: auto;
-    padding: 60px 0px;
     background-color: var(--cor1);
+    padding: 100px 20px;
 }
 
 .container-texto h2 {
@@ -102,7 +106,7 @@ main {
     font-size: 20px;
     letter-spacing: 2px;
     text-align: center;
-    padding: 40px 0px 20px 0px;
+    padding: 40px 0px;
 }
 
 .container-texto p {
@@ -132,7 +136,9 @@ main {
 
 .secao-contatos {
     width: 100%;
-    height: 950px;
+    height: 800px;
+    padding: 100px 20px;
+    margin-top: 60px;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -169,4 +175,94 @@ main {
     text-align: center;
     text-shadow: 3px 3px 5px #000;
     line-height: 30px;
+}
+
+.secao-horarios {
+    width: 100%;
+    padding: 100px 20px;
+    background-image: url(./assets/cafeteria.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secao-horarios h2 {
+    font-family: var(--fonte0);
+    color: var(--cor1);
+    font-size: 20px;
+    letter-spacing: 8px;
+    padding: 30px 0px;
+}
+
+.horarios {
+    width: 100%;
+    max-width: 800px;
+}
+
+.horarios li {
+    list-style: none;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.horarios h3 {
+    color: var(--cor1);
+    flex: 0 1 80px;
+    font-family: var(--fonte0);
+}
+
+.horarios li div {
+    height: 1px;
+    background-color: var(--cor5);
+    flex: 1 1 auto;
+}
+
+.horarios li span, p {
+    font-size: 15px;
+    flex: 0 1 100px;
+    text-align: right;
+}
+
+.horarios li span {
+    color: var(--cor0);
+    font-family: var(--fonte0);
+    font-weight: 600;
+}
+
+.horarios li p {
+    color: var(--cor1);
+    font-family: var(--fonte0);
+}
+
+.botao-fixo {
+    margin: 0;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+footer {
+    width: 100%;
+    padding: 50px 10px;
+    background-color: var(--cor2);
+}
+
+footer p, span {
+    font-family: var(--fonte2);
+    text-align: center;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+footer p {
+    color: var(--cor1);
+}
+
+footer span {
+    color: var(--cor0);
 }
