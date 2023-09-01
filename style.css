@@ -60,24 +60,29 @@ main {
 
 .container-imagem {
     width: 100%;
-    height: 800px;
     padding: 40px 0px;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .container-imagem h3 {
+    width: 500px;
     font-family: var(--fonte1);
     font-weight: 300;
     font-size: 20px;
     color: var(--cor1);
     font-style: italic;
     letter-spacing: 2px;
+    text-align: center;
     background-color: var(--cor3);
-    padding: 5px 20px;
+    padding: 10px;
+    top: 45%;
+    right: 0;
+    left: 0;
 }
 
 .secao-banner {
+    height: 100vh;
     background-image: url(./assets/parallax-imagem1.png);
     background-position: center;
     padding: 100px 20px;
@@ -90,14 +95,17 @@ main {
     color: var(--cor1);
     font-size: 78px;
     font-family: var(--fonte1);
+    top: 45%;
+    left: 0;
+    right: 0;
 }
 
 .container-texto {
-    width: 900px;
+    max-width: 1024px;
     height: 300px;
     margin: auto;
     background-color: var(--cor1);
-    padding: 100px 20px;
+    padding: 80px 00px;
 }
 
 .container-texto h2 {
@@ -119,7 +127,7 @@ main {
 }
 
 .container-imagem#imagem1 {
-    height: 350px;
+    height: 50vh;
     background-image: url(./assets/parallax-imagem2.jpg);
     display: flex;
     align-items: center;
@@ -127,7 +135,7 @@ main {
 }
 
 .container-imagem#imagem2 {
-    height: 300px;
+    height: 50vh;
     background-image: url(./assets/parallax-imagem3.jpg);
     display: flex;
     align-items: center;
@@ -136,7 +144,7 @@ main {
 
 .secao-contatos {
     width: 100%;
-    height: 800px;
+    height: 100vh;
     padding: 100px 20px;
     margin-top: 60px;
     background-size: cover;
@@ -152,21 +160,27 @@ main {
 }
 
 .secao-contatos#contato > h2 {
-    width: 400px;
+    width: 500px;
     color: var(--cor1);
     font-family: var(--fonte0);
     letter-spacing: 4px;
     text-align: center;
     margin-bottom: 50px;
-    padding: 5px 30px;
+    padding: 10px;
     background-color: var(--cor3);
+    top: 10%;
+    right: 0;
+    left: 0;
 }
 
 .secao-contatos > .box-contatos {
-    width: 400px;
+    width: 500px;
     background-color: var(--cor3);
-    padding: 10px 40px;
+    padding: 10px;
     margin-top: 50px;
+    bottom: 8%;
+    right: 0;
+    left: 0;
 }
 
 .box-contatos > p {
@@ -179,13 +193,16 @@ main {
 
 .secao-horarios {
     width: 100%;
+    height: 65vh;
     padding: 100px 20px;
     background-image: url(./assets/cafeteria.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .secao-horarios h2 {
@@ -194,11 +211,21 @@ main {
     font-size: 20px;
     letter-spacing: 8px;
     padding: 30px 0px;
+    top: 20%;
+    right: 0;
+    left: 0;
 }
 
 .horarios {
     width: 100%;
     max-width: 800px;
+}
+
+.horarios ul {
+    width: 768px;
+    bottom: 20%;
+    right: 0;
+    left: 0;
 }
 
 .horarios li {
